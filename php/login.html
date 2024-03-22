@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="form">
+<p>Login</p>
+<form name="login" action="login-val.php" method="POST" onsubmit="return validateform()">
+
+    <input type="email" placeholder="Email" name="user" required/>
+
+    <input type="password" placeholder="Password" name="password" required/>                         
+
+    <label><a href="register.html">Register here</a></label>
+
+    <button class="btn" type="submit">Log in</button></a>
+
+</form>
+</div>
+  
+</body>
+<script>
+function validateform(){  
+var name=document.login.user.value;  
+var password=document.login.password.value;
+var atposition=name.indexOf("@");  
+var dotposition=name.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+}    
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+} else {
+  localStorage.setItem("alert","true");
+  return true
+}
+}
+</script>
+</html>

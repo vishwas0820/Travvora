@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login </title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="form">
+<p>Manager Login</p>
+<form name="login" action="loginm.php" method="POST" onsubmit="return validateform()">
+
+    <input type="email" placeholder="Email" name="user" required/>
+
+    <input type="password" placeholder="Password" name="password" required/>  
+    
+    <label><a href="register_manager.html">Register here</a></label>
+
+    <button class="btn" type="submit">Log in</button></a>
+
+</form>
+</div>
+  
+</body>
+<script>
+function validateform(){  
+var name=document.login.user.value;  
+var password=document.login.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+} 
+</script>
+</html>

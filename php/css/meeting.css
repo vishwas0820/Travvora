@@ -1,0 +1,191 @@
+body{
+	font-family: "Raleway", sans-serif;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+    height: 70px;
+  }
+  
+  header.sticky{
+    background: #1483D5;
+    padding: 15px 100px;
+    box-shadow: 0px 1px 10px #999;
+  }
+  
+  header .brand{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .menu a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    transition-property: color, background;
+  }
+  
+  header .menu a:hover{
+    color: #fff;
+    background: #000;
+  }
+  
+  
+  header .btn{
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+
+.detail {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 20px;
+}
+
+.meeting_venues{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.book a {
+    color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  transition-property: color, background;
+}
+
+.book a:hover{
+color: #fff;
+  background: #000;
+}
+
+.bookevent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bookevent .row1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-group {
+    position: relative;
+}
+
+.input-group .input-area {
+    outline: none;
+    border: 2px solid #dadce0;
+    padding: 16px 13px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group .input-area:valid + .label {
+    top: -8px;
+    padding: 0 3px;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.input-group .input-area:focus {
+    border: 2px solid royalblue;
+}
+
+.input-group .label {
+    color: #8d8d8d;
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    background: #ffffff;
+}
+
+.input-group .input-area:focus + .label {
+    top: -8px;
+    padding: 0 3px;
+    font-size: 14px;
+    color: royalblue;
+}
+
+.bookevent .wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translate(100%,0);
+    margin-right: 300px;
+  }
+  
+.bookevent .wrap .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+    }
+  
+.bookevent .wrap .button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}

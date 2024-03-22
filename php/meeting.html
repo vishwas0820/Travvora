@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <link rel="stylesheet" href="css/meeting.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <style>
+    #more {display: none;}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="user.php" class="brand">Travvora</a>
+    <div class="btn">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="menu">
+      <a href="book_event.php"style="float: left;">Book event space</a>
+      <a href="logout.php">Logout</a>
+    </div>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+  <div class="image">
+  <img src="img/meeting.jpeg" alt="meet1" width="100%" height="580px">
+  </div>
+  <div class="detail">
+    <h1>Events</h1>
+    <p>Choose from our unparalleled collection of event spaces across city hotels, beaches and royal palaces.Our team of experts will assist you at every step to ensure the most perfect and memorable event.</p>
+  </div>
+
+  <div class="meeting_venues">
+    <table cellspacing="10">
+      <tr>
+        <td>
+            <img src="img/meeting1.jpeg" style="float:right;width: 400px; height: 300px;">
+        </td>
+        <td>
+            <h2>Grand Ballroom</h2>
+            <h3 style="font-weight: bold">Oberoi, Bangalore</h3>
+            <p>Max Capacity:800</p>
+            <p>The Grand Ballroom, with its stately Italianate style staircase, spacious pre-function area and adjoining lawns, provides a fairy tale backdrop for weddings and special events</p>
+            <ul>
+            <li>Dimension: 30 m x 21 m</li>
+            <li>Area: 630 sq.m</li>
+            <li>Height: 3.6 m</li>
+            </ul>
+            <div class="book">
+            <a href="book_event.php">Book the venue</a>
+            </div>
+        </td>
+       </tr>
+    </table>
+  </div>
+  <div class="meeting_venues">
+    <table cellspacing="10">
+      <tr>
+        <td>
+            <img src="img/meeting2.jpeg" style="float:right;width: 400px; height: 300px;">
+        </td>
+        <td>
+            <h2>Palace Ballroom</h2>
+            <h3 style="font-weight: bold">Jai Mahal Palace, Jaipur</h3>
+            <p>Max Capacity:550</p>
+            <p>TThe Ballroom dazzles with its golden decor, stunning views and in-built stage.</p>
+            <ul>
+            <li>Dimension: 25 m. X 20 m</li>
+            <li>Area: 500 sq. m.</li>
+            <li>Height: 1.5 m</li>
+            </ul> 
+            <div class="book">
+              <a href="book_event.php">Book the venue</a>
+            </div>
+        </td>
+       </tr>
+    </table>
+  </div>
+
+  <div class="meeting_venues">
+    <table cellspacing="10">
+      <tr>
+        <td>
+            <img src="img/meeting3.jpeg" style="float:right;width: 400px; height: 300px;">
+        </td>
+        <td>
+            <h2>Durbar Hall</h2>
+            <h3 style="font-weight: bold">Taj Exotica Resort and Spa,Goa</h3>
+            <p>Max Capacity:900</p>
+            <p>At 475 sq. m, the Durbar Hall Sabhagaar is a dazzling showcase of the world’s longest running dynasty. Built in the 1910s by Maharana Fateh Singh, it is amongst India’s most dramatic heritage banquet halls. A show-stopping1000 kilogram central crystal chandelier flanked by others illuminates the pillar-less hall like a larger-than-life dream.</p>
+            <ul>
+            <li>Dimension: 35 m. x 13 m</li>
+            <li>Area: 475 Sq. m.</li>
+            <li>Height: 8 m.</li>
+            </ul> 
+            <div class="book">
+              <a href="book_event.php">Book the venue</a>
+            </div>  
+        </td>
+       </tr>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Travvora - Hotel Management System</h3>
+      <p>Tourism is a major source of the economy in many countries. It has to made easier for people traveling between places to book and reside in hotels without any inconvenience. To solve this problem, we designed a Hotel Management System which is a website that helps the people/users to book a stay in any one of the hotels located in Bengaluru, Jaipur and Goa. Along with the room booking, they also can avail facilities like spa, event space booking and dining. On the other side, to view the room bookings and bookings of other facilities we have created separate web pages for the managers and receptionists to view the data gathered. The purpose of this website is to perform various management operations of the hotel and ease the job of the people involved.</p>
+    </div>
+  
+     <div class="footer-bottom">
+      <p>copyright &copy;2023 <a href="#">Travvora</a>  </p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+           <li><a href="user.html">Home</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+     </div>
+  </footer>
+</body>
+
+<script>
+  window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+</script>
+</html>

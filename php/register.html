@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/styler.css">
+
+</head>
+<body>
+
+<div id="bg"></div>
+
+<div class="form">
+  <p>Register</p>
+  <form name="register" action="process-signup.php" method="POST" onsubmit="return validateform()">
+  
+      <input type="email" placeholder="Email" name="email" required/>
+
+      <input type="username" placeholder="Name" name="user" required/>
+  
+      <input type="password" placeholder="Password" name="password" required/>
+      
+      <input type="password" placeholder="Confirm Password" name="password2" required/> 
+  
+      <button class="btn" type="submit">Register</button></a>
+  
+  </form>
+</div>
+  
+</body>
+<script>
+function validateform(){  
+var x=document.register.email.value;
+var name=document.register.user.value;  
+var password=document.register.password.value;
+var secondpassword=document.register.password2.value; 
+  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+}   
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+ 
+if(password==secondpassword){  
+  return true;  
+  }  
+else{  
+  alert("password must be same!");  
+  return false;  
+}  
+} 
+</script>
+</html>
